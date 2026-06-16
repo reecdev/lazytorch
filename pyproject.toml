@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lazytorch"
+version = "0.1.0"
+description = "The easiest ML library you'll ever use."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+dependencies = ["torch>=2.0"]
+keywords = ["machine-learning", "deep-learning", "pytorch"]
+
+[project.urls]
+Homepage = "https://github.com/reecdev/lazytorch"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
