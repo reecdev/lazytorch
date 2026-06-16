@@ -1,7 +1,5 @@
 # lazytorch
-The easiest ML library you'll ever use.
-
-# WARNING: WIP, DO NOT EXPECT PUBLIC RELEASES FOR A WHILE
+The easiest ML library you'll ever use. **Currently in early beta. Do not use for production yet.**
 
 ## What is LazyTorch?
 LazyTorch is a ML library that lets you make neural networks and models with ease. Just like the name suggests, LazyTorch is for lazy people like me.
