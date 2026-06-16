@@ -283,8 +283,8 @@ class BrainScanner:
             single_in = {k: v[i] for k, v in inputs.items()}
             single_out = {k: v[i] for k, v in outputs.items()}
             pred = brain.infer(single_in)
-            if all(pred[k] == single_out[k] for k in single_out):
-                correct += 1
+            
+            correct += sum(pred[k] == single_out[k] for k in single_out)
         return correct / total
 
 class BrainTrust:
