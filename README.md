@@ -4,6 +4,11 @@ The easiest ML library you'll ever use. **Currently in early beta. Do not use fo
 ## What is LazyTorch?
 LazyTorch is a ML library that lets you make neural networks and models with ease. Just like the name suggests, LazyTorch is for lazy people like me.
 
+## Installation
+```bash
+pip install lazytorch
+```
+
 ## Code Examples
 **Brain** - General classification and neural networks.
 ```python
