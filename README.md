@@ -36,14 +36,6 @@ model.teach("the capital of russia is moscow. the capital of britan is london. t
 print(model.generate("the capital of france is", max_words=1)) # output: paris
 ```
 
-**SeriesBrain** - Brain but for predicting sequences.
-```python
-model = SeriesBrain(input={"val": 0.0}, output={"val": 0.0})
-model.teach(series_data=[[1.0], [2.0]], next_values=[3.0])
-
-print(model.infer({"val": 2.0})) # output: {'val': 3.0}
-```
-
 **Dataset** - Datasets.
 ```python
 ds = Dataset({"text": ["hello", "world"]}, {"is_positive": [True, True]})
