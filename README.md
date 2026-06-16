@@ -11,17 +11,17 @@ LazyTorch is a ML library that lets you make neural networks and models with eas
 ```python
 model = Brain(input={"text": ""}, output={"is_positive": True})
 
-ds = Dataset({
-    "text": [
+ds = Dataset(
+    {"text": [
         "i love this",
         "this is great",
         "absolute perfection",
         "i hate this",
         "this is terrible",
         "this is awful"
-    ],
-    "is_positive": [True, True, True, False, False, False]
-})
+    ]},
+    {"is_positive": [True, True, True, False, False, False]}
+)
 
 model.teach(ds)
 
